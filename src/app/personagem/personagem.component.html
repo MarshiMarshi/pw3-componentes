@@ -1,0 +1,9 @@
+<div>
+  Personagem: {{nome}}
+  <div *ngIf="!isVazio; else desconhecido">
+    Reino: {{reino}}
+  </div>
+  <ng-template #desconhecido>
+    <p>???</p>
+  </ng-template>
+</div>
